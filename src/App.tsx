@@ -1,7 +1,7 @@
-import React from 'react';
-import {BrowserRouter, Routes, Route, Navigate} from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Tuner from "./pages/Tuner";
-import Header from "./components/Header";
+import Metronome from './pages/Metronome';
+import Header from "./common/Header";
 import webSocketClient from "./utils/WebSocketClient";
 import { AppContext } from './utils/AppContext';
 import eventEmitterClient from "./utils/EventEmitter";
@@ -51,19 +51,19 @@ function App() {
   //       console.log('Getusermedia threw error: ' + err);
   //     });
   // }
-
-  return (
-    <AppContext.Provider value={appContext}>
-      <BrowserRouter>
-        <Header/>
-        <Routes>
-          <Route path="/" element={<Navigate to="/tuner"/>}/>
-          <Route path="tuner" element={<Tuner/>}/>
-          <Route path="metronome" element={<h1>Metronome</h1>}/>
-        </Routes>
-      </BrowserRouter>
-    </AppContext.Provider>
-  );
-}
+  
+    return (
+      <AppContext.Provider value={appContext}>
+        <BrowserRouter>
+          <Header />
+          <Routes>
+            <Route path="/" element={<Navigate to="/tuner" />} />
+            <Route path="tuner" element={<Tuner />} />
+            <Route path="metronome" element={<Metronome/>}/>
+          </Routes>
+        </BrowserRouter>
+      </AppContext.Provider>
+    );
+  };
 
 export default App;
