@@ -1,6 +1,5 @@
 import {CircularInput, CircularTrack, CircularThumb, CircularProgress} from 'react-circular-input'
 import {useDispatch} from "react-redux";
-import {useTypedSelector} from "../hooks/UseTypedSelector";
 import {setMetronomeBpm} from "../actions/tunerActions";
 import {useState} from "react";
 export default function MetronomeSlider(props: { changeInterval: (arg0: number) => void; }) {
@@ -21,9 +20,9 @@ export default function MetronomeSlider(props: { changeInterval: (arg0: number) 
 				onChange={v => (setBpm(stepValue(v)))}
 				onChangeEnd={v => (setBpmAndUpdateMetronome(stepValue(v)))}
 			>
-				{/* Change colors to match theme */}
+				{/* TODO Change colors to match theme */}
 				<CircularTrack strokeWidth={5} stroke={'#ddef34'} />
-				<CircularProgress  stroke={'#dd1f12'}/>
+				<CircularProgress stroke={'#dd1f12'}/>
 				<CircularThumb fill="rgba(255,255,255,0.5)" />
 				<text x={100} y={100} textAnchor="middle" dy="0.3em" fontWeight="bold" fill={'grey'}>
 					{Math.round(stepValue(value) * 360)}
