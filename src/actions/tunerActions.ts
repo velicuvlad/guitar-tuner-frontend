@@ -1,11 +1,10 @@
 import {Dispatch} from "redux";
 
-
-export const setAnimationFrameId = (animationFrameId: number) => {
+export const setMetronomeBpm = (bpm: number) => {
   return (dispatch: Dispatch) => {
     dispatch({
-      type: "SET_ANIMATION_FRAME_ID",
-      payload: animationFrameId
+      type: "SET_BPM",
+      payload: bpm
     });
   };
 }
