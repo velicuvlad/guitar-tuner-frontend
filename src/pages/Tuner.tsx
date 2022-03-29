@@ -22,12 +22,12 @@ export default function Tuner() {
 
 
   return (
-    <div className={"flex flex-col justify-center items-center my-10  lg:h-2/3 lg:flex-row"}>
-      <div className={"px-4 sm:px-6 lg:px-8 flex flex-col justify-center items-center"}>
-        <StringPicker ws={ws}/>
+    <div className={"flex flex-col justify-center items-center my-10  lg:h-2/3 lg:flex-row grid md:grid-cols-6 gap-4"}>
+      <div className={"px-4 sm:px-6 lg:px-8 flex flex-col justify-center items-center md:col-span-3"}>
         <TuningPicker/>
+        <StringPicker ws={ws}/>
       </div>
-      <div className={"px-4 sm:px-6 lg:px-8 my-5 lg:my-0 flex flex-col justify-center items-center"}>
+      <div className={"px-4 sm:px-6 lg:px-8 my-5 lg:my-0 flex flex-col justify-center items-center md:col-span-2"}>
         <FrequencyGrid pitch={pitch}/>
       </div>
     </div>

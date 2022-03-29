@@ -31,7 +31,7 @@ export default function TuningPicker() {
   };
 
   return (
-    <div className={'relative'}>
+    <div className={' mb-3 relative'}>
       <button id="dropdownButton"
               onClick={() => setDropdownOpen(!dropdownOpen)}
               className="text-text-accent font-medium text-2xl rounded-lg text-sm px-4 py-2.5 mt-4 text-center inline-flex items-center"

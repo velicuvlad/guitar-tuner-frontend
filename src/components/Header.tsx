@@ -10,12 +10,12 @@ export default function Header() {
               <a href="#">
                 <span className="sr-only">Workflow</span>
                 <img
-                  className="h-10 w-auto"
+                  className="h-6 w-auto"
                   src={'logo.png'}
                   alt="equalizer image"
                 />
               </a>
-              <h2 className={'ml-10 text-base font-medium text-xl text-white hover:text-indigo-50'}>App name</h2>
+              <h2 className={'ml-10 text-base font-medium text-xl text-white hover:text-indigo-50'}>MGTuner</h2>
             </div>
             <div className="absolute w-full flex justify-center mr-8 hidden sm:flex">
               <CustomLink to={'/tuner'} classes="mx-3 text-xl font-medium hover:text-text-accent">

@@ -20,9 +20,8 @@ export default function MetronomeSlider(props: { changeInterval: (arg0: number) 
 				onChange={v => (setBpm(stepValue(v)))}
 				onChangeEnd={v => (setBpmAndUpdateMetronome(stepValue(v)))}
 			>
-				{/* TODO Change colors to match theme */}
-				<CircularTrack strokeWidth={5} stroke={'#ddef34'} />
-				<CircularProgress stroke={'#dd1f12'}/>
+				<CircularTrack strokeWidth={4} stroke={'#8CBEB2'} />
+				<CircularProgress stroke={'#53EFCA'}/>
 				<CircularThumb fill="rgba(255,255,255,0.5)" />
 				<text x={100} y={100} textAnchor="middle" dy="0.3em" fontWeight="bold" fill={'grey'}>
 					{Math.round(stepValue(value) * 360)}

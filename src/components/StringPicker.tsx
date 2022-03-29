@@ -78,7 +78,7 @@ export default function StringPicker(props: { ws: undefined | WebSocketClient })
                 className={`m-5 relative`}>{tuningStrings.string_3}</button>
       </div>
     </div>
-    <img id={'guitar-neck'} className={"mt-8 sm:mx-10"} style={{width: 340, height: 350}} src={'guitar.png'} alt={"guitar neck"}/>
+    <img id={'guitar-neck'} className={"sm:mx-4"} style={{width: 200, height: 210}} src={'guitar.png'} alt={"guitar neck"}/>
     <div className={"flex flex-col justify-center items-center self-start text-white"}>
       <div className={'flex justify-center items-center'}>
         <div className={`${string === 'string_4' ? 'bg-text-accent-background' : 'bg-text-accent'}  blur p-2 absolute`}/>
