@@ -1,7 +1,7 @@
 import {MetronomeReducerAction, MetronomeReducerState} from "../types/metronomeReducer";
 
 const initialState: MetronomeReducerState = {
-  bpm: 0.4444444444444444
+  bpm: 0.3333333333333333
 }
 export const metronomeReducer = (state = initialState, action: MetronomeReducerAction) => {
   switch (action.type) {
